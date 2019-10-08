@@ -15,6 +15,7 @@ namespace ConsoleApplication1
             PrintAlphabetUP();
             ASCII('A');
             checkUpLow('b');
+            change2('x');
 
         }
         public static void PrintAlphabet()
@@ -70,7 +71,16 @@ namespace ConsoleApplication1
             }
 
         }
-
+        public static void change(char c)
+        {
+            int chage = (int)c + 32;
+            Console.Write((char)chage);
+        }
+        public static void change2(char c)
+        {
+            int chage = (int)c - 32;
+            Console.Write((char)chage);
+        }
     }
 }
 
